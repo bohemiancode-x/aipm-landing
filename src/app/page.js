@@ -1,7 +1,5 @@
 import LearnCard from "@/components/ui/cards/LearnCard";
 import LogoCard from "@/components/ui/cards/LogoCard";
-import CoordinatorsSection from "@/components/ui/home/CoordinatorsSection";
-import TuitionSection from "@/components/ui/home/TuitionSection";
 import Navbar from "@/components/ui/navbar/Navbar";
 import Image from "next/image";
 
@@ -184,9 +182,6 @@ export default function Home() {
             </div>
         </div>
       </section>
-
-      <CoordinatorsSection />
-      <TuitionSection />
     </main>
   );
 }
