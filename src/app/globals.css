@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: #ffffff;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .container {
+    @apply max-w-[1440px] px-8 lg:px-20 mx-auto
+  }
+  .navlinks li {
+    @apply cursor-pointer font-normal py-4 lg:px-3 xl:px-5 rounded-full
+  }
+  .navlinks .active {
+    @apply bg-[#D9D9D9]
+  }
+  .bg-gradient-green {
+    @apply bg-gradient-to-b from-[#012528] from-[100%] to-[#04838E] to-[100%]
+  }
+  .bg-text-gradient {
+    @apply bg-gradient-to-tl from-[#012528] to-[#04838E] bg-clip-text text-transparent
+  }
+  .course-module-h2 {
+    @apply bg-gradient-to-tl from-[#2ba7aa] to-[#cbf7f9] bg-clip-text text-transparent
+  }
+  .cta-button-nav {
+    @apply text-white font-bold py-4 px-2 xl:px-4 bg-gradient-to-b from-[#012528] from-[100%] to-[#04838E] to-[100%] w-fit rounded-full
+  }
+  .cta-button {
+    @apply text-white bg-gradient-to-b from-[#012528] from-[100%] to-[#04838E] to-[100%] w-fit rounded-full
+  }
+  .feature-card {
+    @apply flex md:w-[25%] flex-col gap-3 md:gap-4 items-center text-center md:text-start md:items-start
+  }
+  .designed-for-title {
+    @apply py-2 text-3xl sm:text-4xl md:text-5xl bg-gradient-to-tl from-[#2ba7aa] to-[#cbf7f9] bg-clip-text text-transparent
+  }
+  .designed-for .active {
+    @apply py-3 block text-light-green md:border-t-4 border-[#fff]
+  }
+  .designed-for li {
+    @apply py-3 hidden md:block
+  }
+  .progress .active {
+    @apply  bg-white
+  }
+  .progress span {
+    @apply w-2 h-2 border border-white rounded-full
+  }
+  .tuition-bd li {
+    @apply flex items-start gap-2 text-start
+  }
+  .tuition-bd li p {
+    @apply w-[85%]
+  }
+  .info-card {
+    @apply min-h-[55vh] h-[55vh] sm:h-[60vh] md:h-[70vh] w-[90%] sm:w-[75%] md:w-[45%] lg:w-[40%] xl:w-[35%] overflow-hidden rounded-3xl
+  }
+}
