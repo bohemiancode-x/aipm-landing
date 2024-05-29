@@ -24,6 +24,11 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .diamond-gradient {
+    background: linear-gradient(45deg, #2ba7aa 25%, #cbf7f9 25%, #cbf7f9 50%, #2ba7aa 50%, #2ba7aa 75%, #cbf7f9 75%);
+    background-clip: text;
+    color: transparent;
+  }
   .container {
     @apply max-w-[1440px] px-8 lg:px-20 mx-auto
   }

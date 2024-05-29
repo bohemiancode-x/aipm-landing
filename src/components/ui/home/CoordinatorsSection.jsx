@@ -6,11 +6,11 @@ import Image from 'next/image'
 
 const CoordinatorsSection = () => {
   return (
-    <section className="bg-[#012528] pb-[10%]">
+    <section className=" bg-[url('/assets/instructor-bg-mobile.png')]  bg-cover bg-no-repeat md:bg-[#012528] pb-[10%]">
         <div className="container py-[10%]">
             <div>
             <h2 className="course-module-h2 my-10 text-4xl md:text-5xl py-4 text-center">Your coordinating instructor</h2>
-            <div className="flex flex-col gap-6 md:flex-row justify-between md:bg-gradient-to-bl from-[#012528] to-[#04838E] rounded-3xl">
+            <div className="flex flex-col gap-6 md:flex-row justify-between md:bg-coordinator-card-bg bg-cover bg-no-repeat rounded-3xl">
                 <div className="md:w-[40%]">
                 <Image
                     src='/assets/iyanu-odebode.png'

@@ -14,8 +14,17 @@ module.exports = {
         'insights-bg': "url('/assets/cta-bg.png')",
         'cohort-bg': "url('/assets/cohort-date-bg.png')",
         'reviews-bg': "url('/assets/reviews-bg.png')",
+        'reviews-bg-mobile': "url('/assets/reviews-bg-mobile.png')",
+        'review-card-bg': "url('/assets/review-card-bg.png')",
+        'review-card-bg-mobile': "url('/assets/review-card-bg-mobile.png')",
+        'tuition-card-bg': "url('/assets/tuition-card-bg.png)",
         'tuition-bg-mobile': "url('/assets/tuition-bg-mobile.png)",
-        'footer-bg': "url('/assets/footer-bg.png')"
+        'instructor-bg-mobile': "url('/assets/instructor-bg-mobile.png)",
+        'footer-bg': "url('/assets/footer-bg.png')",
+        'course-module-bg-mobile': "url('/assets/course-module-bg-mobile.png')",
+        'course-module-bg': "url('/assets/course-module-bg.png')",
+        'coordinator-card-bg': "url('/assets/coordinator-card-bg.png')",
+        'footer-bg-mobile': "url('/assets/footer-bg-mobile.png')"
       },
       colors: {
         "dark-green": "#012528",

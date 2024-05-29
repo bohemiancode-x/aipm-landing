@@ -4,7 +4,7 @@ import React from 'react'
 const TuitionSection = () => {
   return (
     <section className="container bg-[url('/assets/tuition-bg-mobile.png')] bg-cover bg-no-repeat md:bg-none flex flex-col md:flex-row  gap-8 justify-center items-center md:items-start py-[20%] md:py-[10%]">
-          <div className="info-card text-[#AEB4AE] bg-gradient-green">
+          <div className="info-card text-[#AEB4AE] bg-[url('/assets/tuition-card-bg.png')] bg-cover bg-no-repeat">
               <div className="py-[5%] px-[10%] border-b border-[#F9F9F9]">
                 <p className="text-sm sm:text-base md:text-lg font-light">TUITION</p>
                 <p className="text-[#2BA7AA] text-3xl sm:text-4xl md:text-6xl font-semibold">$2,420</p>
