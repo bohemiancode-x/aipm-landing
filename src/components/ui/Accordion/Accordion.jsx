@@ -14,7 +14,7 @@ const Accordion = ({ data, className }) => {
   };
 
   return (
-    <div className='accordion-container overflow-hidden min-h-screen md:min-h-[70vh]'>
+    <div className='accordion-container overflow-hidden min-h-screen md:min-h-[90vh] xl:min-h-[85vh]'>
           <ul className='flex flex-col gap-2'>
           {data.map((accordion) => (
               <div key={accordion.id} className={`relative py-2 border-b border-[#979393] overflow-hidden group ${ openAccordion === accordion.id ? 'is-active' : ''}`}>

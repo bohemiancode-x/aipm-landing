@@ -4,7 +4,7 @@ import React from 'react'
 const DetailsSection = () => {
   return (
     <>
-        <section className="container my-[5%]">
+        <section className="container my-[5%] md:my-[9%]">
             <div className="flex flex-col gap-14 md:flex-row justify-around items-center text-grey-green text-lg py-10">
             <div className="feature-card">
                 <Image
