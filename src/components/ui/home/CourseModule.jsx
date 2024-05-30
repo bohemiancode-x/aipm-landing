@@ -28,7 +28,7 @@ const CourseModule = () => {
           </div>
         </div>
         <div className="container items-center text-center md:text-start md:items-start pt-[30%] pb-[5%]">
-            <h2 className="bg-text-gradient text-4xl md:text-5xl py-4">Gain invaluable insights<br/> from leading figures in the<br/> AI industry</h2>
+            <h2 className="bg-text-gradient text-4xl md:text-5xl py-4">Gain invaluable insights<br className="hidden sm:block" /> from leading figures in the<br className="hidden sm:block" /> AI industry</h2>
             <p className="text-[#5F5E5E] md:w-[60%] text-base md:text-lg">
               Leverage their deep knowledge and experience to develop the skills you need to successfully bridge the gap between AI technology and user needs. Our guest instructors work with some of the leading companies building AI today.
             </p>
