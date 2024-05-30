@@ -7,9 +7,9 @@ const TuitionSection = () => {
           <div className="info-card text-[#AEB4AE] bg-[url('/assets/tuition-card-bg.png')] bg-cover bg-no-repeat">
               <div className="py-[5%] px-[10%] border-b border-[#F9F9F9]">
                 <p className="text-sm sm:text-base md:text-lg font-light">TUITION</p>
-                <p className="text-[#2BA7AA] text-3xl sm:text-4xl md:text-6xl font-semibold">$2,420</p>
+                <p className="text-[#2BA7AA] text-2xl sm:text-3xl md:text-6xl font-semibold">$2,420</p>
               </div>
-              <div className="px-[10%] py-10 text-sm md:text-base xl:text-lg">
+              <div className="px-[5%] md:px-[10%] py-10 text-sm md:text-base xl:text-lg">
                 <p>The tuition for this course includes:</p>
                 <ul className="tuition-bd flex flex-col my-3 gap-3">
                   <li>
