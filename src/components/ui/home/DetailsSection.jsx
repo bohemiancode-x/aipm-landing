@@ -43,8 +43,8 @@ const DetailsSection = () => {
         </section>
 
         <section className="bg-dark-green">
-            <div className="container my-[5%] flex flex-col-reverse md:flex-row gap-16 justify-center items-center py-24">
-            <div className="md:w-[45%] flex flex-col items-center md:items-start md:flex-col gap-5 md:gap-10">
+            <div className="container my-[5%] flex flex-col-reverse md:flex-row gap-16 justify-center md:justify-between items-center py-24">
+            <div className="md:w-[45%] lg:w-[50%] flex flex-col items-center md:items-start md:flex-col gap-5 md:gap-10">
                 <h2 className="designed-for-title hidden md:block">Who this course is <br/> designed for</h2>
                 <div className="progress flex md:hidden gap-4">
                 <span className="active"></span>
@@ -56,18 +56,18 @@ const DetailsSection = () => {
                 <li>Product Owners</li>
                 <li>Business Analysts</li>
                 </ul>
-                <p className="text-light-grey text-center md:text-start text-sm md:text-base xl:text-lg">
+                <p className="text-light-grey text-center md:text-start text-sm sm:text-base lg:text-[20px]">
                 You are already navigating the complex, rewarding world of product management. Enhance your skills and knowledge in AI, enabling you to effectively prioritize AI investments and drive growth in your organization.
                 </p>
             </div>
-            <div className="md:w-[45%]">
-                <h2 className="designed-for-title mb-8 md:hidden">Who this course is <br/> designed for</h2>
+            <div className="w-full md:w-[45%] lg:w-[50%]">
+                <h2 className="designed-for-title text-center mb-8 md:hidden">Who this course is <br/> designed for</h2>
                 <Image 
                 src='/assets/woman-on-laptop.png'
                 width={1500}
                 height={0}
                 priority
-                className="w-[75vw] md:w-fit md:h-[30rem] rounded-2xl"
+                className="w-full rounded-2xl"
                 />
             </div>
             </div>

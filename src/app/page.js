@@ -19,7 +19,7 @@ export default function Home() {
           <p className="text-base font-light lg:text-lg text-grey-green lg:w-[45%]">
             Gain the essential skills to manage AI and machine learning products through our practical, 6-weeks live-streamed course. Learn how to effectively bridge the gap between AI and user experience to deliver successful AI-driven products.
           </p>
-          <button className="cta-button font-light px-5 py-4 md:px-7 lg:px-10 lg:py-6 text-lg lg:text-xl">Join the next cohort July 15, 2024</button>
+          <button className="cta-button font-light px-5 py-4 md:px-7 lg:px-10 lg:py-6 text-lg lg:text-xl mt-5 lg:mt-10">Join the next cohort July 15, 2024</button>
         </div>
       </div>
 

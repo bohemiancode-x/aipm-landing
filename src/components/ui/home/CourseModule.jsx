@@ -7,20 +7,28 @@ const CourseModule = () => {
     <section className="relative bg-insights-bg bg-cover bg-no-repeat">
         <div className="md:container md:absolute md:-top-[12%] m-auto left-0 right-0 my-[5%] lg:my-0">
           <div className="bg-course-module-bg-mobile md:bg-course-module-bg bg-cover bg-no-repeat flex flex-col-reverse gap-8 text-center md:flex-row justify-between items-center md:rounded-2xl  py-[10%] md:py-2 p-2">
-            <div className="md:w-[45%] w-[75%]">
+            <div className="md:w-[45%] w-full">
               <Image
                 src='/assets/course-module-gradient.png'
                 width={1500}
                 height={0}
                 priority
-                className="md:w-full rounded-2xl"
+                className="hidden md:block md:w-full rounded-2xl"
+                alt='course module image'
+              />
+              <Image
+                src='/assets/course-module-gradient-mobile.png'
+                width={1500}
+                height={0}
+                priority
+                className="w-full container md:hidden rounded-2xl"
                 alt='course module image'
               />
               <button className="my-5 mx-auto md:hidden block rounded-full text-[#F1F1F1]  border-[1.5px] border-[#F1F1F1] px-4 py-2 text-sm">Download Syllabus</button>
             </div>
             <div className="md:w-[45%] flex flex-col gap-5 md:items-start md:text-start justify-around">
               <h3 className="course-module-h2 text-2xl md:text-3xl">See the course <br/> modules in finer detail</h3>
-              <p className="text-[#F1F1F1] px-5% sm:px-[15%] md:px-0 text-sm md:text-lg md:mr-[15%]">
+              <p className="text-[#F1F1F1] px-5 sm:px-[15%] md:px-0 text-sm md:text-lg md:mr-[15%]">
                 The detailed syllabus for the Artificial Intelligence Product Management module is publicly available, so that there is complete clarity about what is covered.
               </p>
               <button className="hidden md:block rounded-full text-[#F1F1F1]  border-[1.5px] border-[#F1F1F1] px-4 py-2 text-sm">Download Syllabus</button>

@@ -46,15 +46,14 @@ const Footer = () => {
           <div className="footer mt-[5%]">
             <div className="border-b border-[#5F5E5E] py-12">
                 <div className="flex justify-between">
-                  <div className='hidden md:flex gap-3 items-center md:text-sm xl:text-base'>
+                  <div className='hidden md:block'>
                     <Image
-                        src='/assets/aipm-logo.png'
+                        src='/assets/full_logo.svg'
                         width={300}
                         height={0}
                         priority
-                        className='w-[5rem] sm:w-[7rem] md:w-[9rem] lg:w-[7rem] xl:w-fit h-full'
+                        className='w-full h-full'
                     />
-                    <p className='text-[#19343F] leading-none border-l border-[#2BA7AA] px-2 lg:px-2 xl:px-3 w-full font-semibold'>The Artificial Intelligence <br/> Product Management School</p>
                   </div>
                   <ul className="hidden lg:flex md:text-sm xl:text-base gap-4 ml-auto text-black">
                     <li>Overview</li>

@@ -6,10 +6,10 @@ const TuitionSection = () => {
     <section className="container bg-[url('/assets/tuition-bg-mobile.png')] bg-cover bg-no-repeat md:bg-none flex flex-col md:flex-row  gap-8 justify-center items-center md:items-start py-[20%] md:py-[10%]">
           <div className="info-card text-[#AEB4AE] bg-[url('/assets/tuition-card-bg.png')] bg-cover bg-no-repeat">
               <div className="py-[5%] px-[10%] border-b border-[#F9F9F9]">
-                <p className="text-sm sm:text-base md:text-lg font-light">TUITION</p>
-                <p className="text-[#2BA7AA] text-2xl sm:text-3xl md:text-6xl font-semibold">$2,420</p>
+                <p className="text-sm sm:text-base md:text-lg lg:text-[20px] font-light">TUITION</p>
+                <p className="text-[#2BA7AA] text-6xl lg:text-[77px] font-semibold">$2,420</p>
               </div>
-              <div className="px-[5%] md:px-[10%] py-10 text-sm md:text-base xl:text-lg">
+              <div className="px-[5%] md:px-[10%] py-10 text-[15px] md:text-base lg:text-[20px]">
                 <p>The tuition for this course includes:</p>
                 <ul className="tuition-bd flex flex-col my-3 gap-3">
                   <li>
@@ -39,10 +39,10 @@ const TuitionSection = () => {
             <div className="relative h-full p-5 bg-[url('/assets/cohort-date-bg.png')] bg-cover bg-no-repeat">
               <div className="min-h-full flex flex-col gap-3 text-start top-5 left-5">
                 <p className="text-black text-sm md:text-base font-light">JOIN THE NEXT COHORT</p>
-                <p className="text-white font-medium text-4xl md:text-5xl">July 15, 2024</p>
+                <p className="text-white font-medium text-[40px] md:text-5xl lg:text-[52px]">July 15, 2024</p>
               </div>
             </div>
-            <div className="bg-gradient-green mb-auto py-5 text-[#2BA7AA] text-center md:text-lg">
+            <div className="bg-gradient-green mb-auto py-5 text-[#2BA7AA] text-center text-lg lg:text-[24px]">
               <p>Join Next Cohort</p>
             </div>
           </div>
