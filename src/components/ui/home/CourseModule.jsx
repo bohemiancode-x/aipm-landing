@@ -40,12 +40,12 @@ const CourseModule = () => {
             <p className="text-[#5F5E5E] md:w-[60%] text-base md:text-lg">
               Leverage their deep knowledge and experience to develop the skills you need to successfully bridge the gap between AI technology and user needs. Our guest instructors work with some of the leading companies building AI today.
             </p>
-            <div className="md:w-[60%] my-14 grid grid-cols-3 gap-6">
-              <LogoCard src='/assets/cohere-logo.png' className='w-28' />
-              <LogoCard src='/assets/scale-logo.png' className='w-24' />
-              <LogoCard src='/assets/mistral-logo.png' className='w-28' />
-              <LogoCard src='/assets/google-logo.png' className='w-28' />
-              <LogoCard src='/assets/glean-logo.png' className='w-24' />
+            <div className="px-[10%] md:px-0 md:w-[60%] my-14 grid grid-cols-3 items-center gap-6">
+              <LogoCard src='/assets/cohere-logo.png' className='w-20 md:w-28' />
+              <LogoCard src='/assets/scale-logo.png' className='w-24 md:w-24' />
+              <LogoCard src='/assets/mistral-logo.png' className='w-24 md:w-28' />
+              <LogoCard src='/assets/google-logo.png' className='w-20 md:w-28' />
+              <LogoCard src='/assets/glean-logo.png' className='w-20 md:w-24' />
               <LogoCard src='/assets/perplexity-logo.png' className='w-28' />
             </div>
             <div className="py-[10%] md:w-[60%]">

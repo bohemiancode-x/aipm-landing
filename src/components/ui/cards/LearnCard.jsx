@@ -10,6 +10,7 @@ const LearnCard = ({ module, title, text}) => {
             height={0}
             priority
             className="w-28 h-28 md:w-32 md:h-32"
+            alt='image'
         />
         <div className="flex flex-col gap-3 md:gap-5 text-base sm:text-lg">
             <h4 className="font-semibold text">{title}</h4>

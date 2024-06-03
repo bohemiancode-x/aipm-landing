@@ -10,6 +10,7 @@ const LogoCard = ({src, className}) => {
         //fill
         className={className}
         priority
+        alt='logo'
     />
   )
 }

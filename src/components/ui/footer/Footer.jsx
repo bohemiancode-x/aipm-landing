@@ -53,6 +53,7 @@ const Footer = () => {
                         height={0}
                         priority
                         className='w-full h-full'
+                        alt='logo'
                     />
                   </div>
                   <ul className="hidden lg:flex md:text-sm xl:text-base gap-4 ml-auto text-black">

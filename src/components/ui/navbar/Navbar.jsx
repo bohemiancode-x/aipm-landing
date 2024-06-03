@@ -12,8 +12,8 @@ const Navbar = () => {
                     height={0}
                     priority
                     className='w-full h-full'
+                    alt='logo'
                 />
-                {/* <p className='text-[#19343F] leading-none border-l border-[#2BA7AA] px-2 lg:px-2 xl:px-3 w-full font-semibold'>The Artificial Intelligence <br/> Product Management School</p> */}
             </div>
             <div className='hidden py-6  lg:flex lg:text-sm xl:text-base items-center justify-between text-black gap-3 xl:gap-5'>
                 <ul className='navlinks bg-[#eeeeee] rounded-full flex gap-2 xl:gap-3'>
