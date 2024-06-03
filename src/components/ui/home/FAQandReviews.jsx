@@ -1,6 +1,6 @@
 import React from 'react'
-import Accordion from '../accordion/Accordion'
-import { data } from '../accordion/data'
+import Accordion from '../Accordion/Accordion'
+import { data } from '../Accordion/data'
 import ReviewCard from '../cards/ReviewCard'
 
 const FAQandReviews = () => {
