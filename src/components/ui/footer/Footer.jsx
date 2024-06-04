@@ -18,8 +18,8 @@ const Footer = () => {
 
   return (
     <section className="bg-footer-bg-mobile md:bg-footer-bg bg-cover bg-no-repeat">
-        <div className="container pt-[5%] pb-6">
-          <div className="my-[10%] md:my-[15%]">
+        <div className="container pt-[15%] md:pt-[7%] pb-6">
+          <div className="my-[15%] md:my-[15%]">
             <div className="hidden p-3 md:flex flex-row-reverse justify-between md:bg-gradient-to-bl from-[#012528] to-[#04838E] from-[100%] to-[1%] rounded-3xl">
                   <div className="md:w-[45%]">
                     <Image
@@ -27,6 +27,7 @@ const Footer = () => {
                         width={1200}
                         height={0}
                         className="w-full rounded-3xl"
+                        alt='hands-together'
                     />
                   </div>
                   <div className="md:w-[45%] text-start h-full flex flex-col m-auto gap-6">

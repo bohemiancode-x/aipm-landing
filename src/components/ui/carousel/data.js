@@ -43,3 +43,18 @@ export const expertsData = [
     },
     
 ]
+
+export const Reviews = [
+    {
+        id: 1,
+        name: 'Iyanuoluwa Odebode',
+        position: 'Head of Product, Perplexity',
+        review: 'This program offered a comprehensive exploration of AI and machine learning. I`ve gained insights into the functioning of machine learning and the intricate challenges it presents, particularly the ethical aspects that are crucial when creating products that incorporate AI or machine learning.'
+    },
+    {
+        id: 2,
+        name: 'Iyanuoluwa Odebode',
+        position: 'Head of Product, Perplexity',
+        review: 'This program offered a comprehensive exploration of AI and machine learning. I`ve gained insights into the functioning of machine learning and the intricate challenges it presents, particularly the ethical aspects that are crucial when creating products that incorporate AI or machine learning.'
+    },
+]

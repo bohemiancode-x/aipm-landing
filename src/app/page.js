@@ -29,6 +29,7 @@ export default function Home() {
           height={0}
           priority
           className="hidden sm:block w-[90%] h-full mx-auto rounded-2xl my-20"
+          alt='hero'
         />
         <Image
           src='/assets/hero-bg-mobile.png'
@@ -36,6 +37,7 @@ export default function Home() {
           height={0}
           priority
           className="sm:hidden w-full h-fit mx-auto rounded-2xl my-6"
+          alt='hero'
         />
 
       <DetailsSection />

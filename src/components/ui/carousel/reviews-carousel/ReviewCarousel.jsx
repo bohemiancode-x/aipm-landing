@@ -2,6 +2,7 @@
 
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
+import ClassNames from 'embla-carousel-class-names'
 
 import {
   NextButton,
@@ -9,12 +10,11 @@ import {
   usePrevNextButtons
 } from './ArrowButtons'
 import { DotButton, useDotButton } from './DotButton'
-import { expertsData } from '../carousel/data'
-import Image from 'next/image'
+import { Reviews } from '../data'
 
-const EmblaCarousel = (props) => {
+const ReviewCarousel = (props) => {
   const { slides, options } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options)
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [ClassNames()])
 
   const { selectedIndex, scrollSnaps, onDotButtonClick } =
     useDotButton(emblaApi)
@@ -26,33 +26,19 @@ const EmblaCarousel = (props) => {
     onNextButtonClick
   } = usePrevNextButtons(emblaApi)
 
-  
-//   const logSlidesInView = () => {
-//     console.log(emblaApi.slidesInView())
-//   }
-
-//   useEffect(() => {
-//     if (emblaApi) emblaApi.on('slidesInView', logSlidesInView)
-//   }, [emblaApi, logSlidesInView])
 
   return (
     <div className="embla relative">
       <div className="embla__viewport container" ref={emblaRef}>
-        <div className="embla__container flex">
-          {expertsData.map((resource, index) => (
-            <div className="embla__slide relative flex-[0_0_85%] sm:flex-[0_0_65%] md:flex-[0_0_48.3%] lg:flex-[0_0_40.3%] xl:flex-[0_0_38%]" key={index}>
-                <div className="embla__slide" key={index}>
-                    <img
-                        className="embla__slide__img"
-                        src={resource.img}
-                        alt="carousel image"
-                    />
-                </div>
-                <div className='text-white text-[20px] absolute bottom-7 left-14'>
-                    {/* {companySvg} */}
-                    <Image src={resource.coyLogo} width={500} height={0} className='w-fit' alt='logo' />
-                    <p className='mt-5'>{resource.name}</p>
-                    <p>{resource.title}</p>
+        <div className="embla__container md:gap-4">
+          {Reviews.map((resource, index) => (
+            <div key={index} className="embla___slide embla__class-names flex-[0_0_90%] sm:flex-[0_0_75%] md:flex-[0_0_80.3%] bg-review-card-bg-mobile md:bg-review-card-bg bg-cover bg-no-repeat text-white p-[7%] rounded-3xl">
+                <p className="px-[5%] md:px-[10%] text-[20px] md:text-[24px] text-center md:text-start">
+                    "{resource.review}"
+                </p>
+                <div className="mt-10 text-sm md:text-base flex flex-col items-end gap-1">
+                <p className='mr-10'> — {resource.name}</p>
+                <p className="text-light-green">{resource.position}</p>
                 </div>
             </div>
           ))}
@@ -83,4 +69,4 @@ const EmblaCarousel = (props) => {
   )
 }
 
-export default EmblaCarousel
+export default ReviewCarousel

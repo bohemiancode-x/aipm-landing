@@ -68,6 +68,7 @@ const DetailsSection = () => {
                 height={0}
                 priority
                 className="w-full rounded-2xl"
+                alt='woman-on-laptop'
                 />
             </div>
             </div>

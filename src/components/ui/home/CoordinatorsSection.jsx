@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import EmblaCarousel from '../embla-carousel/carousel'
+import GuestsCarousel from '../carousel/embla-carousel/GuestsCarousel'
 
 
 const CoordinatorsSection = () => {
@@ -16,6 +16,7 @@ const CoordinatorsSection = () => {
                     width={1200}
                     height={0}
                     className="w-full rounded-3xl"
+                    alt='iyanu'
                 />
                 </div>
                 <div className="md:text-center md:px-8 md:py-2 lg:px-0 lg:py-0 lg:w-[50%] text-center lg:text-start h-full text-white flex flex-col m-auto gap-5">
@@ -31,7 +32,7 @@ const CoordinatorsSection = () => {
             <h2 className="container course-module-h2 my-10 text-4xl md:text-5xl py-4 text-center">
                 Guest Experts
             </h2>
-            <EmblaCarousel />
+            <GuestsCarousel />
         </div>
     </section>
   )
