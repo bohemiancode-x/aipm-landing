@@ -39,7 +39,7 @@ const GuestsCarousel = (props) => {
     <div className="embla relative">
       <div className="embla__viewport container" ref={emblaRef}>
         <div className="embla__container flex">
-          {expertsData.map((resource, index) => (
+          {expertsData && expertsData.map((resource, index) => (
             <div className="embla__slide relative flex-[0_0_85%] sm:flex-[0_0_65%] md:flex-[0_0_48.3%] lg:flex-[0_0_40.3%] xl:flex-[0_0_38%]" key={index}>
                 <div className="embla__slide" key={index}>
                     <img
@@ -68,7 +68,7 @@ const GuestsCarousel = (props) => {
     {/* dot buttons */}
       <div className="flex md:hidden mt-[1.8rem] container">
         <div className="m-auto gap-2 flex">
-          {scrollSnaps.map((_, index) => (
+          {scrollSnaps && scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}

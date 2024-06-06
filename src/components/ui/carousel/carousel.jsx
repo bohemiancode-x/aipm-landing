@@ -104,7 +104,7 @@ const Carousel = () => {
           ref={carousel}
           className="container carousel-container relative flex gap-8 overflow-hidden scroll-smooth snap-x snap-mandatory touch-pan-x z-0"
         >
-          {expertsData.map((resource, index) => {
+          {expertsData && expertsData.map((resource, index) => {
             return (
                 <div
                     key={index}

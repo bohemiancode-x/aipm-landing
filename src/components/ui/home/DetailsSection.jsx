@@ -55,7 +55,7 @@ const DetailsSection = () => {
             <div className="md:w-[45%] lg:w-[50%] flex flex-col items-center md:items-start md:flex-col gap-5 md:gap-10">
                 <h2 className="designed-for-title hidden md:block">Who this course is <br className='hidden xl:block'/> designed for</h2>
                 <ul className="designed-for flex gap-4 md:gap-0 items-center justify-between text-medium-grey">
-                    {Tabs.map((item, index) => (
+                    {Tabs && Tabs?.map((item, index) => (
                         <li key={index} onClick={() => setActiveTab(item)} className={activeTab === item ? 'active' : ''}>
                             <p>{item}</p>
                         </li>

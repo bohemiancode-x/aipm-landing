@@ -31,7 +31,7 @@ const ReviewCarousel = (props) => {
     <div className="embla relative">
       <div className="embla__viewport container" ref={emblaRef}>
         <div className="embla__container md:gap-4">
-          {Reviews.map((resource, index) => (
+          {Reviews && Reviews.map((resource, index) => (
             <div key={index} className="embla___slide embla__class-names flex-[0_0_90%] sm:flex-[0_0_75%] md:flex-[0_0_80.3%] bg-review-card-bg-mobile md:bg-review-card-bg bg-cover bg-no-repeat text-white p-[7%] rounded-3xl">
                 <p className="px-[5%] md:px-[10%] text-[20px] md:text-[24px] text-center md:text-start">
                     "{resource.review}"
@@ -54,7 +54,7 @@ const ReviewCarousel = (props) => {
     {/* dot buttons */}
       <div className="flex md:hidden mt-[1.8rem] container">
         <div className="m-auto gap-2 flex">
-          {scrollSnaps.map((_, index) => (
+          {scrollSnaps && scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
               onClick={() => onDotButtonClick(index)}
