@@ -22,7 +22,7 @@ const Accordion = ({ data, className }) => {
                     className={`${className} text-light-green duration-500 cursor-pointer flex gap-2 lg:gap-5 items-center rounded py-4`}
                     onClick={() => handleAccordionClick(accordion.id)}
                 >
-                    <p className='text-sm sm:text-base lg:text-lg'>{accordion.question}</p>
+                    <p className='text-sm sm:text-base lg:text-[20px]'>{accordion.question}</p>
                     <span className={` ml-auto transition-all duration-500`}>
                       {openAccordion === accordion.id ? (
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +47,7 @@ const Accordion = ({ data, className }) => {
                         {/* <img src="/arrow-right.svg" alt="" /> */}
                     </span>
                 </div>
-                <div className={`${className} -z-10 group-[.is-active]:z-[1] text-white relative -top-[12rem] overflow-hidden mt-0 text-sm sm:text-base lg:text-lg rounded p-0 transition-all duration-500 group-[.is-active]:p-2 group-[.is-active]:mt-2 max-h-0 group-[.is-active]:max-h-[200px] group-[.is-active]:top-0`}>
+                <div className={`${className} -z-10 group-[.is-active]:z-[1] text-white relative -top-[12rem] overflow-hidden mt-0 text-sm sm:text-base lg:text-[20px] rounded p-0 transition-all duration-500 group-[.is-active]:p-2 group-[.is-active]:mt-2 max-h-0 group-[.is-active]:max-h-[200px] group-[.is-active]:top-0`}>
                   <p>
                     {accordion.answer}
                   </p>

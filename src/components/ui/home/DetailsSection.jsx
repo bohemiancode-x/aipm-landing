@@ -1,7 +1,15 @@
+'use client'
+
+import { useState } from 'react'
 import Image from 'next/image'
 import React from 'react'
 
+const Tabs = ['Current Product Managers', 'Product Owners', 'Business Analysts']
+
 const DetailsSection = () => {
+    const [activeTab, setActiveTab] = useState(Tabs[0])
+
+
   return (
     <>
         <section className="container my-[5%] md:my-[9%]">
@@ -45,20 +53,22 @@ const DetailsSection = () => {
         <section className="bg-dark-green">
             <div className="container my-[5%] flex flex-col-reverse md:flex-row gap-16 justify-center md:justify-between items-center py-24">
             <div className="md:w-[45%] lg:w-[50%] flex flex-col items-center md:items-start md:flex-col gap-5 md:gap-10">
-                <h2 className="designed-for-title hidden md:block">Who this course is <br/> designed for</h2>
-                <div className="progress flex md:hidden gap-4">
-                <span className="active"></span>
-                <span></span>
-                <span></span>
-                </div>
-                <ul className="designed-for md:border-t border-[#ffffff] flex gap-5 items-center justify-between text-medium-grey">
-                <li className="active">Current Product Managers</li>
-                <li>Product Owners</li>
-                <li>Business Analysts</li>
+                <h2 className="designed-for-title hidden md:block">Who this course is <br className='hidden xl:block'/> designed for</h2>
+                <ul className="designed-for flex gap-4 md:gap-0 items-center justify-between text-medium-grey">
+                    {Tabs.map((item, index) => (
+                        <li key={index} onClick={() => setActiveTab(item)} className={activeTab === item ? 'active' : ''}>
+                            <p>{item}</p>
+                        </li>
+                    ))}
                 </ul>
-                <p className="text-light-grey text-center md:text-start text-sm sm:text-base lg:text-[20px]">
-                You are already navigating the complex, rewarding world of product management. Enhance your skills and knowledge in AI, enabling you to effectively prioritize AI investments and drive growth in your organization.
-                </p>
+                <div className='tab'>
+                    {activeTab === 'Current Product Managers' && (<h3>Current product managers</h3>)}
+                    {activeTab === 'Product Owners' && (<h3>product owners</h3>)}
+                    {activeTab === 'Business Analysts' && (<h3>business analysts</h3>)}
+                    <p className="text-light-grey text-center md:text-start text-sm sm:text-base lg:text-[20px]">
+                    You are already navigating the complex, rewarding world of product management. Enhance your skills and knowledge in AI, enabling you to effectively prioritize AI investments and drive growth in your organization.
+                    </p>
+                </div>
             </div>
             <div className="w-full md:w-[45%] lg:w-[50%]">
                 <h2 className="designed-for-title text-center mb-8 md:hidden">Who this course is <br/> designed for</h2>

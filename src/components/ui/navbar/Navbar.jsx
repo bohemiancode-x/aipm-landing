@@ -15,7 +15,7 @@ const Navbar = () => {
                     alt='logo'
                 />
             </div>
-            <div className='hidden py-6  lg:flex lg:text-sm xl:text-base items-center justify-between text-black gap-3 xl:gap-5'>
+            <div className='hidden py-6 lg:flex items-center justify-between text-black gap-3 xl:gap-5'>
                 <ul className='navlinks bg-[#eeeeee] rounded-full flex gap-2 xl:gap-3'>
                     <li className='active'>Overview</li>
                     <li>Syllabus</li>
