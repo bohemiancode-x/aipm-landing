@@ -15,6 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
 
+      {/* hero image */}
       <Image
           src='/assets/hero-img.png'
           width={1400}
