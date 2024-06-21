@@ -24,27 +24,10 @@ const Accordion = ({ data, className }) => {
                 >
                     <p className='text-sm sm:text-base lg:text-[20px]'>{accordion.question}</p>
                     <span className={` ml-auto transition-all duration-500`}>
-                      {openAccordion === accordion.id ? (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_1_188" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                            <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_1_188)">
-                            <path d="M5 13V11H19V13H5Z" fill="#2BA7AA"/>
-                          </g>
+                        <svg className="flex-shrink-0 w-4 h-4 ml-auto fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                          <rect y="7" width="16" height="2" rx="1" className={ `${openAccordion === accordion.id ? 'rotate-180' : 'false'} transform origin-center transition duration-200 ease-out`}></rect>
+                          <rect y="7" width="16" height="2" rx="1" className={ `${openAccordion === accordion.id ? 'rotate-180' : 'false rotate-90'} transform origin-center transition duration-200 ease-out`}></rect>
                         </svg>
-                        
-                      ) : (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <mask id="mask0_1_167" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9"/>
-                          </mask>
-                          <g mask="url(#mask0_1_167)">
-                            <path d="M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z" fill="#2BA7AA"/>
-                          </g>
-                        </svg>
-                      )}
-                        {/* <img src="/arrow-right.svg" alt="" /> */}
                     </span>
                 </div>
                 <div className={`${className} -z-10 group-[.is-active]:z-[1] text-white relative -top-[12rem] overflow-hidden mt-0 text-sm sm:text-base lg:text-[20px] rounded p-0 transition-all duration-500 group-[.is-active]:p-2 group-[.is-active]:mt-2 max-h-0 group-[.is-active]:max-h-[200px] group-[.is-active]:top-0`}>
